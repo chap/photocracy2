@@ -1,6 +1,6 @@
 log/*
 tmp/**/*
-db/schema.rb
+db/GeoLiteCity.dat
 db/*.sqlite3
 public/system
 *.DS_Store

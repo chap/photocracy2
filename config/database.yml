@@ -3,15 +3,7 @@
 
 development: &default
   adapter: mysql
-  database: allourideas_development
-  pool: 5
-  timeout: 5000
-
-#development: &default
-#  adapter: sqlite3
-#  database: db/development.sqlite3
-#  pool: 5
-#  timeout: 5000
+  database: photocracy_development
 
 test: &TEST
   adapter: sqlite3
