@@ -17,10 +17,9 @@ config.action_mailer.delivery_method = :test
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
 
-HOST = 'localhost:3001'
-#API_HOST = "http://204.236.224.252"
-#API_HOST = 'http://allourideas.com'
-API_HOST = "http://localhost:3000"
+# passenger in development
+HOST = 'photocracy.local'
+API_HOST = "http://pairwise.local"
 
 PAIRWISE_USERNAME = "pairwisetest@dkapadia.com"
 PAIRWISE_PASSWORD = "wheatthins"
