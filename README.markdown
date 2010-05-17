@@ -1,10 +1,9 @@
-All Our Ideas
+Photocracy
 -------------------
 
-All Our Ideas 2.0.
+Photocracy 2.0.
 
 Ownership
 -------------------
 
-Copyright (c) 2009, Pius Uzamere and the Trustees of Princeton
-University.  Licensed under the BSD License
+Copyright (c) 2010, Trustees of Princeton University.  Licensed under the BSD License
