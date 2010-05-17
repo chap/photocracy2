@@ -18,8 +18,8 @@ config.action_mailer.delivery_method = :test
 config.action_mailer.raise_delivery_errors = false
 
 # passenger in development
-HOST = 'photocracy.local'
-API_HOST = "http://pairwise.local"
+HOST = 'photocracy2.local'
+API_HOST = "http://pairwise2.local"
 
 PAIRWISE_USERNAME = "pairwisetest@dkapadia.com"
 PAIRWISE_PASSWORD = "wheatthins"
