@@ -22,7 +22,7 @@ h1 {
   padding: 7px 10px;
   width: 30px;
   margin: 0 auto;
-  -moz-border-radius: 100px;
+  @include rounded(100px);
   margin-top: 150px;
   @include box-shadow(2px, 2px, 2px, #fff);
   font-size: 170%;
@@ -79,63 +79,59 @@ a.photo_frame:hover {
   text-shadow: #235a9b -2px 0px 5px;
 }
 
-#secondary_content .grid_4 {
-  background: #fff;
-  width: 32.93%;
-  margin: 0 .2%;
-  border-bottom: 1px solid #db9327;
-}
-
-#secondary_content h5 {
-  @include marble-fade(#db9327);
-  color: #000;
-}
-
-#secondary_content h5 {
-  text-align: center;
-  padding: 1em;
-  text-shadow: #fff 1px 1px 2px;
+#secondary_content {
+  .grid_4 {
+    background: #fff;
+    width: 32.93%;
+    margin: 0 .2%;
+    border-bottom: 1px solid #db9327;
+  }
+  
+  h5 {
+    @include fade-down(#db9327);
+    color: #000;
+    text-align: center;
+    padding: 1em;
+    text-shadow: #fff 1px 1px 2px;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
 }
 
 ul.your_votes {
   line-height: 75px;
   margin: 0;
   list-style-type: none;
+  
+  li {
+    margin: 0;
+  }
 }
 
-ul.your_votes li {
-  margin: 0;
-}
-
-#secondary_content img {
-  vertical-align: middle;
-}
 
 ul.results {
   list-style-type: none;
-}
-
-ul.results li {
-  margin: 0;
-  padding: .5em;
-}
-
-ul.results li a {
-  padding: .5em;
-  border: 1px solid #ccc;
-  -moz-border-radius: 5px;
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-}
-
-ul.results li a.active, ul.results li a.active:hover {
-  background: #ccc;
-  font-weight: bold;
-}
-
-ul.results li a:hover {
-  background: #eee;
+  
+  li {
+    margin: 0;
+    padding: .5em;
+    
+    a {
+      padding: .5em;
+      border: 1px solid #ccc;
+      -moz-border-radius: 5px;
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+      
+      .active, .active:hover {
+        background: #ccc;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 p.results_label {
@@ -163,10 +159,10 @@ p.score_explanation {
   color: #999;
   text-align: center;
   padding: 1em;
-}
-
-#ft a {
-  color: #999;
+  
+  a {
+    color: #999;
+  }
 }
 
 #results #primary_content {

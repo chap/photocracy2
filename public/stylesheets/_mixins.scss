@@ -10,7 +10,27 @@
   -webkit-box-shadow: $offset-x $offset-y $blur $color;
 }
 
-@mixin marble-fade($color: #999) {
-  background: -moz-linear-gradient(lighten($color, 30%), $color);
+@mixin marble-fade($color: #ccc) {
+  background-image: -moz-linear-gradient(lighten($color, 30%), $color);
+  background-image:
+	-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1.00, lighten($color, 30%)),
+		color-stop(0.00, $color)
+	);
+}
+
+@mixin fade-down($color: #ccc) {
+  background-image: -moz-linear-gradient(darken($color, 10%), $color, $color, $color);
+  background-image:
+	-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1.00, darken($color, 10%)),
+		color-stop(0.80, $color)
+	);
 }
 
