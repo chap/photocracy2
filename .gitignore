@@ -1,6 +1,7 @@
 log/*
 tmp/**/*
 db/GeoLiteCity.dat
+.sass-cache*
 db/*.sqlite3
 public/system
 *.DS_Store

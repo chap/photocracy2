@@ -67,7 +67,7 @@ Rails::Initializer.run do |config|
   config.gem 'delayed_job',
     :version => '2.0.3'
   config.gem 'haml', 
-    :version => '2.2.17'
+    :version => '3.0.4'
 end
 
 PRODUCTION_API_HOST = ENV['API_HOST']

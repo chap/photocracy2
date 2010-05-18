@@ -1,0 +1,16 @@
+@mixin rounded($radius: 10px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin box-shadow($offset-x: 1px, $offset-y: 3px, $blur: 3px, $color: #333) {
+  box-shadow: $offset-x $offset-y $blur $color;
+  -moz-box-shadow: $offset-x $offset-y $blur $color;
+  -webkit-box-shadow: $offset-x $offset-y $blur $color;
+}
+
+@mixin marble-fade($color: #999) {
+  background: -moz-linear-gradient(lighten($color, 30%), $color);
+}
+
