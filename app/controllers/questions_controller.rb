@@ -913,7 +913,6 @@ class QuestionsController < ApplicationController
     # @question = Question.new(params[:question].except('url').merge('visitor_identifier' => request.session_options[:id], 
     #                                                                 :ideas => params[:question]['question_ideas']))
     @question = Question.new(params[:question])
-    #raise @question.inspect
     @question.validate_me
     unless @question.valid?
     	if signed_in?
