@@ -98,15 +98,15 @@ en:
       error:
         registration: Sorry, we couldn't register you.
         header: errors prohibited this website from being created.
-      header: Create your website and get ready to discover the best ideas...
+      header: Create your website and get ready to discover the best photos...
       step1: "Step 1: Create your website"
       step1_exp:   "For example, \"Which do you want more from the student government?\""
       step2: "Step 2: Choose your URL"
       step2_exp: studentgovernment
-      step3: "Step 3: Upload lots of ideas to seed the site"
-      step3_ist: Upload lots of ideas here. You should put one per line.
+      step3: "Step 3: Upload lots of photos to seed the site"
+      step3_ist: Upload lots of photos here. You should put one per line.
       step3_ist2: You can copy and paste from a list that you've already created.
-      step3_ist3: The maximum length of an idea is
+      step3_ist3: The maximum size of a photo is
       step3_exp: "Add your own ideas here...\n\nFor example:\nMore hammocks on campus\nImprove student advising\nMore outdoor tables and benches\nVideo game tournaments\nStart late dinner at 8PM\nLower textbook prices\nBring back parking for sophomores"
       step4: "Step 4: Create an Account"
       new_account_exp: Please give us your e-mail and pick a password so that you can get the results and administer your website.
@@ -115,7 +115,7 @@ en:
       success_flash2: Send out your URL
       success_flash3: and watch what happens.
       success_flash4: You can further customize this site by following this link
-      exp: You are about to create your own website where your visitors can vote on existing ideas and upload new ones. You can either
+      exp: You are about to create your own website where your visitors can vote on existing photos and upload new ones. You can either
       see_an: see an example
       exp2: or get started using the steps below.
       if_you_have_an_account: If you already have an account, please login
@@ -123,7 +123,7 @@ en:
       your_email_address: Your Email Address  
       optional: Optional
       help_us_out: Help Us Out
-      tell_us_why: Please tell us a bit about what you are trying to accomplish with All Our Ideas.
+      tell_us_why: Please tell us a bit about what you are trying to accomplish with Photocracy.org.
       tell_us_why2: "Also, feel free to let us know anything else we might find interesting (e.g. how you heard about us, how many visitors you're expecting)"
     enter_a_new_short_url: Enter a new short URL
     edit: edit

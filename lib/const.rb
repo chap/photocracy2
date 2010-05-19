@@ -6,5 +6,6 @@ module Const
   HASH_IP = false
   MAX_QUESTION_LENGTH = 100
   MAX_ITEM_LENGTH = 140
+  MAX_PHOTO_SIZE = 5
   ITEM_LIMIT = 10
 end
