@@ -60,23 +60,12 @@ class Question < ActiveResource::Base
   end
   
   def validate_me
-    #errors = []
-    #raise attributes.inspect
-    # TODO refactor the following to test for only the characters we want using a regex, ie /[a-zA-Z0-9]
-	  # The following leaves plenty of special characters that would screw up urls
     # TODO check minimum number of ideas here? keep validation code in one place?
     errors.add("URL", "is blank (Step 2)")  if attributes['url'].blank?
     errors.add("URL", "contains spaces (Step 2)")  if attributes['url'].include? ' '
-    errors.add("URL", "contains special characters (Step 2)")  if attributes['url'].include? '@'
-    errors.add("URL", "contains special characters (Step 2)")  if attributes['url'].include? '/'
-    errors.add("URL", "contains special characters (Step 2)")  if attributes['url'].include? ':'
-    errors.add("URL", "contains special characters (Step 2)")  if attributes['url'].include? '|'
-    errors.add("URL", "contains special characters (Step 2)")  if attributes['url'].include? '='
-    errors.add("URL", "contains special characters (Step 2)")  if attributes['url'].include? '+'
-    errors.add("URL", "contains special characters (Step 2)")  if attributes['url'].include? "'"
-
-    errors.add("URL", "contains special characters (Step 2)")  unless attributes['url'] =~ /^[[:alnum:]_-]+$/i
-    
+    if attributes['url'].parameterize != attributes['url']
+      errors.add("URL", "contains special characters (Step 2)")  
+    end
     
     begin
       if Earl.find_by_name(attributes['url'].strip).nil?
