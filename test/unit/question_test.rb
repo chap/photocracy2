@@ -8,18 +8,11 @@ class QuestionTest < ActiveSupport::TestCase
   should "be valid with factories" do
     q = Question.new(Factory.attributes_for(:question)) # we'll probably have to use this method for active resource objects
     assert_valid q
-    q.validate_me # active resource objects check validity by looking for attached errors
-    assert_valid q
-    
   end
   
   should "validate urls correctly" do
-
-    invalid_urls = ['contains aspace', "", "bals@bla", "test/this", "askdf|", "=sdkjfs", '+']
-
-    invalid_urls.each do |url|
+    ['contains aspace', "", "bals@bla", "test/this", "askdf|", "=sdkjfs", ' '].each do |url|
     	q = Question.new(Factory.attributes_for(:question, :url => url)) 
-    	q.validate_me
     	assert !q.valid?
     end
 
@@ -27,15 +20,12 @@ class QuestionTest < ActiveSupport::TestCase
   
   should "validate names correctly" do
       q = Question.new(Factory.attributes_for(:question, :name  => "")) 
-      q.validate_me
       assert !q.valid?
   end
-
+  
   should "not have a url of an existing question" do
     e = Factory.create(:earl)
-
     q = Question.new(Factory.attributes_for(:question, :url => e.name))
-    q.validate_me
     assert !q.valid?
   end
 
