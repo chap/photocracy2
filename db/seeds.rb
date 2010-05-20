@@ -6,7 +6,16 @@
                             :url => 'philly',
                             :local_identifier => @user.id,
                             :visitory_identifier => 123,
-                            :ideas => ' ')
+                            :ideas => "1 \n 2 \n 3")
 
 @user.earls.create(:question_id => @question.id,
                    :name => @question.url)
+                   
+                   
+require 'action_controller'
+require 'action_controller/test_process.rb'
+(1..3).to_a.each do |i|
+  @photo = Photo.create! :image => ActionController::TestUploadedFile.new("#{Rails.root}/db/seed-images/#{i}.jpg", "image/jpeg")
+  # Added these in the question.create above
+  # Choice.post(:create_from_abroad, :question_id => @question.id, :params => {'auto' => rand(472348), :data => @photo.id, :local_identifier => @user.id})
+end
