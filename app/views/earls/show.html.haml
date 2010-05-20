@@ -7,17 +7,13 @@
         Click on the best photo to vote! 
         =link_to 'How does this work?', '#'
     .grid_7.center
-      %a.photo_frame{:style => "background:#fff url('#{@right_choice_photo.image.url(:medium)}') center center no-repeat;"}
-        .click_to_vote
-          / =image_tag 'click_to_vote.png'
-      =link_to 'report as inappropriate', '#', :class => 'gray'
+      =render(:partial => 'questions/photo',
+              :locals => {:side => "leftside", :choice_id => @left_choice_id, :photo => @left_choice_photo})
     .grid_2.center
       #vs VS
     .grid_7.center
-      %a.photo_frame{:style => "background:#fff url('#{@left_choice_photo.image.url(:medium)}') center center no-repeat;"}
-        .click_to_vote
-          / =image_tag 'click_to_vote.png'
-      =link_to 'report as inappropriate', '#', :class => 'gray'
+      =render(:partial => 'questions/photo',
+              :locals => {:side => "rightside", :choice_id => @right_choice_id, :photo => @right_choice_photo})
     .clear
     .center.margin_bottom
       =link_to 'Add your own Photo', "#", :class => 'blue button'
