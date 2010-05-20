@@ -38,6 +38,9 @@ class EarlsController < ApplicationController
        @left_choice_text = @prompt.left_choice_text
        @left_choice_id = @prompt.left_choice_id
        @right_choice_id = @prompt.right_choice_id
+
+      @right_choice_photo = Photo.find(@right_choice_text)
+      @left_choice_photo = Photo.find(@left_choice_text)
        
        @item_count = @question.attributes['item_count'] - @question.attributes["inactive_choices_count"]
        @votes_count = @question.attributes['votes_count']
