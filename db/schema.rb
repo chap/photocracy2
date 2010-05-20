@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100420125212) do
+ActiveRecord::Schema.define(:version => 20100520160136) do
 
   create_table "alternatives", :force => true do |t|
     t.integer "experiment_id"
@@ -73,6 +73,15 @@ ActiveRecord::Schema.define(:version => 20100420125212) do
   end
 
   add_index "experiments", ["test_name"], :name => "index_experiments_on_test_name"
+
+  create_table "photos", :force => true do |t|
+    t.string   "image_file_name",    :default => ""
+    t.string   "image_content_type", :default => ""
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "session_infos", :force => true do |t|
     t.string   "session_id"
