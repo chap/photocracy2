@@ -5,16 +5,18 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :passwords, :controller => "clearance/passwords"
 
   map.resources :questions, 
-                :member => {:skip => :post, 
-                            :vote_left => :post, 
-                            :vote_right => :post, 
-                            :add_idea => :post, 
-                            :toggle => :post, 
-                            :toggle_autoactivate => :post, 
-#                            :admin => :get, 
-#                            :results => :get,
-#                            :voter_map => :get,
-			    :delete_logo => :delete }
+                :member => {
+                  :skip => :post, 
+                  :add_idea => :post, 
+                  :toggle => :post, 
+                  :toggle_autoactivate => :post, 
+			            :delete_logo => :delete
+			            }  do |questions|
+			          questions.resources :choices,
+			            :member => {
+			              :vote => :post
+			            }
+	end
   map.resources :earls, :only => [:export_list], :collection => {:export_list=> :get}
   map.resources :clicks, :collection => {:export=> :get}
   #map.connect '/questions/:question_id/choices/:id', :controller => 'choices', :action => 'show'
