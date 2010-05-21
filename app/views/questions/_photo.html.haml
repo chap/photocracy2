@@ -1,5 +1,6 @@
 %a.photo_frame{:style => "background:#fff url('#{photo.image.url(:medium)}') center center no-repeat;",         
-              :class => side, :side => side, :choice_id => choice_id, :question_slug => @question.slug}
+              :href => vote_question_choice_url(@question, choice),
+              :class => "#{side} vote", :side => side, :prompt_id => @prompt.id, :locale => I18n.locale}
   .click_to_vote
     / =image_tag 'click_to_vote.png'
 =link_to 'report as inappropriate', '#', :class => 'gray'
