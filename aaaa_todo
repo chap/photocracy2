@@ -1,0 +1,19 @@
+sass --watch style.scss:style.css
+
+AOI / Photocracy
+remove earl
+
+move voting from question controller to promts
+
+better separation of analytics
+  abingo
+  click tracking
+  
+grouping reports in a logical way
+
+
+
+Pairwise
+-question choices are being created with \n
+prompts#vote_direction
+-remove nested params[params]
