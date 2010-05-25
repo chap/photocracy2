@@ -8,12 +8,12 @@
         =link_to 'How does this work?', '#'
     .grid_7.center
       =render(:partial => 'questions/photo',
-              :locals => {:side => "left", :choice => @left_choice_id, :photo => @left_choice_photo})
+              :locals => {:direction => "left", :choice => @left_choice_id, :photo => @left_choice_photo})
     .grid_2.center
       #vs VS
     .grid_7.center
       =render(:partial => 'questions/photo',
-              :locals => {:side => "right", :choice => @right_choice_id, :photo => @right_choice_photo})
+              :locals => {:direction => "right", :choice => @right_choice_id, :photo => @right_choice_photo})
     .clear
     .center.margin_bottom
       =link_to 'Add your own Photo', "#", :class => 'blue button'
