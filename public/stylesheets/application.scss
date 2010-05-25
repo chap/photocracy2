@@ -169,6 +169,14 @@ p.score_explanation {
   margin-top: 8em;
 }
 
+.loading {
+	background: #fff url(../images/spinner.gif) center center no-repeat !important;
+}
+
+.chosen {
+	background: #fff url(../images/chosen.png) center center no-repeat !important;
+}
+
 .center {
   text-align: center;
 }

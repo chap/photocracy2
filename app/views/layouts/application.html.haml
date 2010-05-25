@@ -10,7 +10,9 @@
       =stylesheet_link_tag 'ie'
     =stylesheet_link_tag 'application'
     =javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', 'application'
-    =javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};"
+    :javascript 
+      var AUTH_TOKEN = #{form_authenticity_token.inspect};
+      var PAGE_LOADED_AT = new Date();
     :javascript
       $(document).ready(function(){
         column_heights = new Array();

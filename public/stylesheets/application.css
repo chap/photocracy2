@@ -143,6 +143,12 @@ p.score_explanation {
 #results #primary_content {
   margin-top: 8em; }
 
+.loading {
+  background: white url(../images/spinner.gif) center center no-repeat !important; }
+
+.chosen {
+  background: white url(../images/chosen.png) center center no-repeat !important; }
+
 .center {
   text-align: center; }
 
