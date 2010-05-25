@@ -43,9 +43,10 @@ config.gem 'jferris-mocha',
   :lib     => 'mocha'
 
 HOST = 'localhost'
-API_HOST = "http://localhost:4000" 
 
-PAIRWISE_USERNAME = "testing@dkapadia.com"
+# use the same pairwise as in development
+API_HOST = "http://pairwise2.local"
+PAIRWISE_USERNAME = "pairwisetest@dkapadia.com"
 PAIRWISE_PASSWORD = "wheatthins"
 
 begin
