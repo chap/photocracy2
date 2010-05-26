@@ -5,5 +5,5 @@ class Photo < ActiveRecord::Base
                         :medium => "425x340>",
                         :thumb => "50>" 
                       },
-                      :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+                      :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
 end
