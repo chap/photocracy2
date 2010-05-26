@@ -1,0 +1,19 @@
+hoptoad_notifier 2.2.2
+ambethia-smtp-tls 1.1.2 --source http://gems.github.com
+paperclip 2.3.1.1
+mime-types 1.16
+xml-simple 1.0.12
+yfactorial-utility_scopes 0.2.2 --source http://gems.github.com
+justinfrench-formtastic 0.2.2 --source http://gems.github.com
+josevalim-inherited_resources 0.9.1 --source http://gems.github.com
+thoughtbot-clearance 0.8.2 --source http://gems.github.com
+fastercsv 1.5.1
+redis-store 0.3.7
+ezmobius-redis-rb 0.1 --source http://gems.github.com
+geoip_city 0.2.0
+geokit 1.5.0
+crack 0.1.4
+friendly_id 2.2.5
+sax-machine 0.0.14
+delayed_job 2.0.3
+haml 3.0.4
