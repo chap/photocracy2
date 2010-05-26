@@ -1,19 +1,19 @@
-sass --watch style.scss:style.css
-
 AOI / Photocracy
-remove earl
-
-move voting from question controller to promts
-
-better separation of analytics
-  abingo
-  click tracking
-  
-grouping reports in a logical way
-
-
+  remove earl
+  move voting from question controller to promts
+  better separation of analytics
+    abingo
+    click tracking
+  grouping reporting in a logical way (separate into it's own class/lib)
 
 Pairwise
--question choices are being created with \n
-prompts#vote_direction
--remove nested params[params]
+  don't automatically create "ideas" when creating a question
+  question choices are being created with a trailing \n
+  refactor prompts#vote_left to just vote
+  remove nested params[params] in #vote
+  
+  
+  
+  
+# helpful reminders for me
+  sass --watch application.scss:application.css  
