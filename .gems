@@ -10,7 +10,7 @@ thoughtbot-clearance 0.8.2 --source http://gems.github.com
 fastercsv 1.5.1
 redis-store 0.3.7
 ezmobius-redis-rb 0.1 --source http://gems.github.com
-geoip_city 0.2.0
+# geoip_city 0.2.0
 geokit 1.5.0
 crack 0.1.4
 friendly_id 2.2.5
