@@ -3,6 +3,7 @@
 
 development: &default
   adapter: mysql
+  user: root
   database: photocracy_development
 
 test: &TEST
