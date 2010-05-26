@@ -23,10 +23,10 @@ config.gem "rubaidh-google_analytics",
   :source  => "http://gems.github.com"
 
 
-#pains me to do this, but can't seem to get environment variables set in EY
-#will change login after demo
-HOST = ENV['ALLOURIDEAS_HOST']
-API_HOST = ENV['API_HOST']
-PAIRWISE_USERNAME = ENV['PAIRWISE_USERNAME']
-PAIRWISE_PASSWORD = ENV['PAIRWISE_PASSWORD']
-IP_ADDR_HASH_SALT = ENV['IP_ADDR_HASH_SALT'] #prevent dictionary attacks on stored ip address hashes
+HOST = 'photocracy.heroku.com'
+API_HOST = "http://pairwise2.heroku.com"
+
+PAIRWISE_USERNAME = "pairwisetest@dkapadia.com"
+PAIRWISE_PASSWORD = "wheatthins"
+
+IP_ADDR_HASH_SALT = '2039d9ds9ufsdioh2394230' #prevent dictionary attacks on stored ip address hashes
