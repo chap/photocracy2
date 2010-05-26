@@ -54,10 +54,10 @@ Rails::Initializer.run do |config|
     :lib     => false,
     :source  => 'http://gems.github.com',
     :version => '0.1'
-  config.gem 'geoip_city',
-    :version => '0.2.0'
-  config.gem 'geokit',
-    :version => '1.5.0'
+  # config.gem 'geoip_city',
+  #   :version => '0.2.0'
+  # config.gem 'geokit',
+  #   :version => '1.5.0'
   config.gem 'crack',
     :version => '0.1.4'
   config.gem 'friendly_id',
