@@ -25,7 +25,7 @@ function castVote(choice) {
 	  },
 	  timeout: 10000,
 	  error: function(request, textStatus, errorThrown) {
-			voteError(request, textStatus, errorThrown)
+			voteError(request, textStatus, errorThrown);
 		},
 	  success: function(data, textStatus, request) {
 			updateVotingHistory(data);
@@ -48,12 +48,12 @@ function loadNextPrompt(data) {
 	  url: data['show_prompt_path'],
 	  data: {
 			authenticity_token: encodeURIComponent(AUTH_TOKEN),
-	    right_choice_text: data['right_choice_text'],
-			left_choice_text:  data['left_choice_text'],
-			right_choice_id:   data['right_choice_id'],
-			left_choice_id:    data['left_choice_id'],
-			question_id:       data['question_id'],
-			prompt_id:         data['prompt_id']
+	    right_choice_text:  data['right_choice_text'],
+			left_choice_text:   data['left_choice_text'],
+			right_choice_id:    data['right_choice_id'],
+			left_choice_id:     data['left_choice_id'],
+			question_id:        data['question_id'],
+			prompt_id:          data['prompt_id']
 	  },
 	  success: function(html) {
 			$('#prompt').html(html);
