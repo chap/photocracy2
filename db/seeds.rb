@@ -1,15 +1,16 @@
-# @user = User.create(:email => 'chapambrose@gmail.com', 
-#                     :password => 'password', 
-#                     :password_confirmation => 'password')
-#                    
-# @question = Question.create(:name => 'Which photo is more Philly?',
-#                             :url => 'philly',
-#                             :local_identifier => @user.id,
-#                             :visitory_identifier => 123,
-#                             :ideas => "1 \n 2 \n 3")
-# 
-# @user.earls.create(:question_id => @question.id,
-#                    :name => @question.url)
+@user = User.create(:email => 'chapambrose@gmail.com', 
+                    :password => 'password', 
+                    :password_confirmation => 'password')
+                   
+@question = Question.create(:name => 'Which photo is more Philly?',
+                            :url => 'philly',
+                            :local_identifier => @user.id,
+                            :visitory_identifier => 123,
+                            :ideas => "1 \n 2 \n 3")
+
+Earl.create(:question_id => @question.id,
+            :name => @question.url,
+            :user_id => @user.id)
                    
                    
 require 'action_controller'
