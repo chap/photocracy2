@@ -1,19 +1,18 @@
-AOI / Photocracy
+High Priority
+  don't automatically create "ideas" when creating a question
+  question choices are being created with a trailing \n
+  
+Lower Priority
   remove earl
   move voting from question controller to promts
   better separation of analytics
-    abingo
-    click tracking
+    -abingo
+    -click tracking
   grouping reporting in a logical way (separate into it's own class/lib)
 
-Pairwise
-  don't automatically create "ideas" when creating a question
-  question choices are being created with a trailing \n
+Done
   refactor prompts#vote_left to just vote
-  remove nested params[params] in #vote
-  
-  
-  
-  
+
+
 # helpful reminders for me
   sass --watch application.scss:application.css  
